@@ -7,7 +7,7 @@ class ShimmerImage extends StatelessWidget {
   final double height;
   final BoxFit fit;
 
-  const ShimmerImage({
+  const ShimmerImage({super.key, 
     required this.imageUrl,
     this.width = double.infinity,
     this.height = 200,

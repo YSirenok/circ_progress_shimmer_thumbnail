@@ -1,14 +1,14 @@
 import 'package:circular_progress_indicator/image_with_progress.dart';
 import 'package:circular_progress_indicator/shimmer_image.dart';
-import 'package:circular_progress_indicator/thumbnuil_image.dart';
+import 'package:circular_progress_indicator/thumbnail_image.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key});
+  const MyApp({super.key});
 
   Widget _buildImageWithProgress() {
-    return Padding(
-      padding: const EdgeInsets.only(top: 16.0),
+    return const Padding(
+      padding: EdgeInsets.only(top: 16.0),
       child: ImageWithProgress(
         imageUrl: 'https://via.placeholder.com/300',
       ),
@@ -16,8 +16,8 @@ class MyApp extends StatelessWidget {
   }
 
   Widget _buildShimmerImage() {
-    return Padding(
-      padding: const EdgeInsets.only(top: 16.0),
+    return const Padding(
+      padding: EdgeInsets.only(top: 16.0),
       child: ShimmerImage(
         imageUrl: 'https://via.placeholder.com/300',
         width: 150,
@@ -28,8 +28,8 @@ class MyApp extends StatelessWidget {
   }
 
   Widget _buildThumbnailImage() {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 16.0),
+    return const Padding(
+      padding: EdgeInsets.symmetric(vertical: 16.0),
       child: Center(
         child: ThumbnailImage(
           imageUrl: 'https://via.placeholder.com/800x600',

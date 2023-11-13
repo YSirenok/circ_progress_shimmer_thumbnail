@@ -5,7 +5,7 @@ class ThumbnailImage extends StatelessWidget {
   final double thumbnailWidth;
   final double thumbnailHeight;
 
-  const ThumbnailImage({
+  const ThumbnailImage({super.key, 
     required this.imageUrl,
     required this.thumbnailWidth,
     required this.thumbnailHeight,

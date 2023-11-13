@@ -26,7 +26,7 @@ class ImageWithProgress extends StatelessWidget {
         },
         errorBuilder:
             (context, error, stackTrace) {
-          return Center(
+          return const Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
